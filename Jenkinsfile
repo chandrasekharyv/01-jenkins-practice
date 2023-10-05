@@ -43,6 +43,7 @@ pipeline {
             steps {
                 sh 'printenv'
             }
+        }
     }
 
     post { 
