@@ -86,7 +86,7 @@ pipeline {
         }
         stage('PROD DEPLOY') {
             when {
-                branch 'master'
+                allOf { branch 'master'; environment name: 'USER', value: 'CHandu' }
             }
             steps {
                 echo 'Deploy to Prod'
