@@ -38,7 +38,7 @@ pipeline {
         }
         stage('Example') {
             environment { 
-                AN_ACCESS_KEY = credentials('ssh-auth') 
+                AUTH_ACCESS_KEY = credentials('ssh-auth') 
             }
             steps {
                 sh 'printenv'
