@@ -8,6 +8,9 @@ pipeline {
     options {
         ansiColor('xterm')
     }
+    environment { 
+        USER = "chandu"
+    }
 
     stages {
         stage('Build') {
@@ -17,6 +20,7 @@ pipeline {
                     ls -ltr
                     pwd
                     echo 'hello jenkins'
+                    printenv
 
                 '''
             }
