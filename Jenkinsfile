@@ -11,9 +11,9 @@ pipeline {
     environment { 
         USER = "chandu"
     }
-     triggers {
-        cron('* * * * *')
-    }
+    //  triggers {
+    //     cron('* * * * *')
+    // }
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Chandu', description: 'Who should I say hello to?')
 
