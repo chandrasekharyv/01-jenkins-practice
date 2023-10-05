@@ -9,7 +9,7 @@ pipeline {
         ansiColor('xterm')
     }
     environment { 
-        USER = "chandu"
+        USER = "Chandu"
     }
     //  triggers {
     //     cron('* * * * *')
@@ -86,7 +86,7 @@ pipeline {
         }
         stage('PROD DEPLOY') {
             when {
-                environment name: 'USER', value: 'CHandu' 
+                environment name: 'USER', value: 'Chandu' 
             }
             steps {
                 echo 'Deploy to Prod'
