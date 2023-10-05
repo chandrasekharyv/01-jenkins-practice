@@ -67,6 +67,7 @@ pipeline {
 
                 echo "Password: ${params.PASSWORD}"
             }
+        }
     }
 
     post { 
